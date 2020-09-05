@@ -111,5 +111,9 @@
     "snapshotSerializers": [
       "jest-serializer-html"
     ]
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "geolib": "^3.3.1"
   }
 }

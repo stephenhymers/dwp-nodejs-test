@@ -12,6 +12,7 @@ module.exports = (app) => {
   require('./views/full-page-examples/what-is-your-address')(app)
   require('./views/full-page-examples/what-is-your-nationality')(app)
   require('./views/full-page-examples/what-is-your-postcode')(app)
+  require('./views/full-page-examples/distance-from-london')(app)
   require('./views/full-page-examples/what-was-the-last-country-you-visited')(app)
 
   app.get('/full-page-examples', (req, res, next) => {
