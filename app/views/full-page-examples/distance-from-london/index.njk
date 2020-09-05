@@ -19,10 +19,10 @@
 
   <form method="post" novalidate>
     {% if errorSummary.length > 0 %}
-        {{ govukErrorSummary({
-            titleText: "There is a problem",
-            errorList: errorSummary
-        }) }}
+      {{ govukErrorSummary({
+        titleText: "There is a problem",
+        errorList: errorSummary
+      }) }}
     {% endif %}
 
     {{ govukInput({
@@ -33,7 +33,7 @@
       },
       classes: "govuk-input--width-2",
       hint: {
-        text: "Must be between 1 and 2 digits long"
+        text: "Must be between 1 and 3 digits long"
       },
       id: "distance",
       name: "distance",
@@ -45,8 +45,8 @@
     }) }}
 
     {{ govukButton({
-        text: "Continue"
-      }) }}
+      text: "Continue"
+    }) }}
   </form>
 
 {% endblock %}

@@ -6,7 +6,7 @@
 {% from "panel/macro.njk" import govukPanel %}
 
 {% set distanceUsers %}
-  {% if distanceUsers.length > 0%}
+  {% if distanceUsers.length > 0 %}
     <table class="govuk-table">
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
@@ -59,7 +59,7 @@
   </table>
 {% endset -%}
 
-{% set pageTitle = "Users Within " + distance + " Miles of London"  %}
+{% set pageTitle = "Users Within " + distance + " Miles of London" %}
 {% block pageTitle %}{{ pageTitle }} - GOV.UK{% endblock %}
 
 {% block beforeContent %}
